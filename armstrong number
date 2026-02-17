@@ -1,0 +1,14 @@
+num = 372
+org = num
+summ=0
+
+nl = len(str(org))
+while num>0:
+    lst = num%10
+    summ += lst**nl
+    num//=10
+    
+if summ == org:
+    print("armstrong")
+else:
+    print("not a number")
